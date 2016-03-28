@@ -13,7 +13,7 @@ experienceByKillingPlayers = false
 expFromPlayersLevelRange = 75
 
 -- Connection Config
-ip = "8.26.94.97"
+ip = "198.50.235.60"
 bindOnlyGlobalAddress = false
 loginProtocolPort = 7171
 gameProtocolPort = 7172
@@ -59,8 +59,8 @@ maxMarketOffersAtATimePerPlayer = 100
 sqlType = "mysql"
 mysqlHost = "127.0.0.1"
 mysqlUser = "root"
-mysqlPass = "suasenha"
-mysqlDatabase = "global"
+mysqlPass = "trocar123"
+mysqlDatabase = "absolut1090"
 mysqlPort = 3306
 mysqlSock = ""
 passwordType = "sha1"
