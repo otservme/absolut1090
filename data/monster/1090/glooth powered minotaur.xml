@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="glooth powered minotaur" nameDescription="glooth powered minotaur" race="blood" experience="60" speed="350" manacost="390">
+	<health now="11000" max="11000"/>
+	<look type="607" corpse="3090"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="70"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="0" max="-2000"/>
+		<attack name="physical" interval="2000" chance="15" radius="3" min="0" max="-630">
+			<attribute key="areaEffect" value="blackspark"/>
+		</attack>
+	</attacks>
+	<defenses armor="20" defense="20"/>
+	<elements>
+		<element physicalPercent="-5"/>
+		<element deathPercent="-5"/>
+	</elements>
+	<voices interval="3000" chance="10">
+		<voice sentence="I FEEL THE POWER!"/>
+		<voice sentence="NOBODY CAN STOP MEEEE!"/>
+		<voice sentence="POOOWEEER!"/>
+		<voice sentence="UNSTOPABLE!"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="20" chance="40000"/><!-- gold coin -->
+		<item id="2229" countmax="2" chance="80000"/><!-- skull -->
+		<item id="2379" chance="80000"/><!-- dagger -->
+		<item id="12400" chance="5000"/><!-- Protective Charm -->
+		<item id="2691" chance="30333"/><!-- brown bread -->
+		<item id="2385" chance="23000"/><!-- sabre -->
+		<item id="12399" chance="10000"/><!-- Girlish Hair Decoration -->
+		<item id="2050" chance="1005"/><!-- torch -->
+		<item id="2125" chance="287"/><!-- crystal necklace -->
+		<item id="2147" chance="161"/><!-- small ruby -->
+	</loot>
+</monster>

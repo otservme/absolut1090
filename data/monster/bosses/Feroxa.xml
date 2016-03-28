@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Feroxa" nameDescription="Feroxa" race="venom" experience="12000" speed="320" manacost="0">
+	<health now="150000" max="150000"/>
+	<look type="731" corpse="24917"/>
+	<targetchange interval="5000" chance="8"/>
+	<flags>
+                <flag rewardchest="1" />
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="2"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="2500"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="0" max="-350"/>
+		<attack name="manadrain" interval="2000" chance="20" range="7" min="-650" max="-850">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+		<attack name="lifedrain" interval="2000" chance="25" length="8" spread="0" min="-400" max="-650">
+			<attribute key="areaEffect" value="greenspark"/>
+		</attack>
+		<attack name="lifedrain" interval="2000" chance="21" radius="6" target="0" min="-550" max="-600">
+			<attribute key="areaEffect" value="poff"/>
+		</attack>
+		<attack name="poisoncondition" interval="2000" chance="15" range="7" min="-20" max="-40">
+			<attribute key="shooteffect" value="poison"/>
+		</attack>
+		<attack name="lifedrain" interval="2000" chance="15" target="0" radius="3" range="4" min="-990" max="-1000"/>
+		<attack name="energycondition" interval="2000" chance="18" radius="6" target="0" min="-300" max="-450">
+			<attribute key="areaEffect" value="energy"/>
+		</attack>
+		<attack name="firecondition" interval="3000" chance="20" range="7" radius="7" target="1" min="-650" max="-800">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+	</attacks>
+	<defenses armor="100" defense="120">
+		<defense name="healing" interval="2000" chance="10" min="950" max="1500">
+			<attribute key="areaEffect" value="greenshimmer"/>
+		</defense>
+		<defense name="invisible" interval="4000" chance="20" duration="5000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element firePercent="90"/>
+		<element holyPercent="20"/>
+	</elements>
+	<immunities>
+		<immunity earth="1"/>
+		<immunity energy="1"/>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="20">
+		<voice sentence="NOONE WILL STOP ME THIS TIME!" yell="1"/>
+		<voice sentence="THE POWER IS MINE!" yell="1"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="200" chance="98000"/>	<!-- gold coin -->
+		<item id="2152" countmax="20" chance="98000"/>	<!-- gold coin -->
+		<item id="18418" countmax="5" chance="75000"/>	<!-- gold ingot -->
+		<item id="24915" chance="5000"/>				<!-- spellbook of lost souls -->
+		<item id="8922" chance="5000"/>				<!-- golden armor -->
+		<item id="8910" chance="22000"/>				<!-- golden legs -->
+		<item id="24932" chance="22000"/>				<!-- spellbook of mind control -->
+		<item id="7383" chance="2000"/>				<!-- velvet mantle -->
+		<item id="7454" chance="20000"/>				<!-- demon shield -->
+		<item id="24913" chance="5000"/>				<!-- divine plate -->
+		<item id="7419" chance="5000"/>				<!-- magma legs -->
+		<item id="7428" chance="2000"/>				<!-- tempest shield -->
+		<item id="24914" chance="5000"/>				<!-- emerald bangle -->
+		<item id="24912" chance="4000"/>				<!-- glacier kilt -->
+		<item id="7436" chance="18000"/>				<!-- lightning legs -->
+		<item id="24890" chance="3000"/>				<!-- phoenix shield -->
+	</loot>
+</monster>

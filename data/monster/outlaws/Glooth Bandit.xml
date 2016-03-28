@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Glooth Bandit" nameDescription="a glooth bandit" race="blood" experience="2000" speed="180" manacost="450">
+	<health now="2600" max="2600"/>
+	<look type="129" head="115" body="80" legs="114" feet="114" corpse="20331"/>
+	<targetchange interval="5000" chance="5"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="25"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="0" max="-300"/>
+		<attack name="physical" interval="2000" chance="50" range="8" min="-60" max="-200">
+			<attribute key="shootEffect" value="arrow"/>
+		</attack>
+	</attacks>
+	<defenses armor="55" defense="65">
+		<defense name="healing" interval="3000" chance="35" min="200" max="250">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element firePercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+		<immunity poison="1"/>
+	</immunities>
+	<loot>
+		<item id="2148" countmax="100" chance="49000"/>	
+		<item id="2152" countmax="3" chance="29900"/>
+		<item id="9970" countmax="2" chance="2900"/>
+		<item id="23567" chance="800"/>
+		<item id="23507" chance="5000"/>
+		<item id="23510" chance="10000"/>
+		<item id="23510" chance="10000"/>
+		<item id="7591" chance="15000"/>
+		<item id="7590" chance="20000"/>
+		<item id="23522" chance="600"/>
+		<item id="23544" chance="600"/>
+		<item id="3962" chance="400"/>
+		<item id="23547" chance="300"/>
+		<item id="23528" chance="300"/>
+		<item id="23542" chance="300"/>
+		<item id="23543" chance="300"/>
+	</loot>
+</monster>

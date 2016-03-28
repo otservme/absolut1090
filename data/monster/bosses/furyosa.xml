@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Furyosa" nameDescription="Furyosa" race="blood" experience="11500" speed="410" manacost="0">
+	<health now="25000" max="25000"/>
+	<look type="149" head="94" body="79" legs="77" feet="0" addons="3" corpse="20399"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+                <flag rewardchest="1" />
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="115" attack="100"/>
+		<attack name="furyosa deathball" interval="3000" chance="75" min="-260" max="-310"/>
+		<attack name="furyosa manadrain" interval="2000" chance="13" min="-50" max="-210"/>
+		<attack name="furyosa soulfire" interval="2000" chance="13"/>
+		<attack name="death" interval="2000" chance="8" length="9" spread="0" target="0" min="-300" max="-800">
+			<attribute key="areaEffect" value="redspark"/>
+		</attack>
+		<attack name="furyosa skill reducer" interval="2000" chance="21"/>
+		<attack name="physical" interval="2000" chance="10" range="7" radius="3" target="1" min="-0" max="-150">
+      			<attribute key="shootEffect" value="whirlwindclub" />
+			<attribute key="areaEffect" value="groundshaker"/>
+		</attack>
+	</attacks>
+	<defenses armor="32" defense="39">
+    		<defense name="invisible" interval="2000" chance="15" duration="5000">
+      			<attribute key="areaEffect" value="teleport" />
+    		</defense>
+		<defense name="furyosa summon" interval="2000" chance="21"/>
+		<defense name="furyosa heal" interval="1000" chance="100"/>
+	</defenses>
+	<elements>
+		<element icePercent="40"/>
+		<element holyPercent="40"/>
+		<element deathPercent="10"/>
+		<element energyPercent="10"/>
+		<element physicalPercent="10"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity fire="1"/>
+		<immunity lifedrain="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="2000" chance="5">
+		<voice sentence="MUHAHA!" yell="1"/>
+		<voice sentence="Die!"/>
+		<voice sentence="Dieeee!"/>
+		<voice sentence="Caaarnaaage!"/>
+		<voice sentence="Ahhhhrrrr!"/>
+	</voices>
+	<loot>
+		<item id="8844" countmax="5" chance="100000"/><!-- jalapeno pepper -->
+		<item id="2148" countmax="200" chance="100000"/><!-- gold coin -->
+		<item id="7590" countmax="5" chance="42860"/><!-- great mana potion-->
+		<item id="5944" chance="42860"/><!-- soul orb -->
+		<item id="6300" chance="14290"/><!-- death ring-->
+		<item id="2124" chance="57140"/><!-- crystal ring-->
+		<item id="6558" chance="14290"/><!-- concentrated demonic blood -->
+		<item id="2152" countmax="30" chance="85710"/><!-- platinum coin -->
+		<item id="2150" countmax="5" chance="10000"/><!-- small amethyst -->
+		<item id="2145" countmax="5" chance="14290"/><!-- small diamond -->
+		<item id="2146" countmax="5" chance="42860"/><!-- small sapphire -->
+		<item id="2147" countmax="5" chance="14290"/><!-- small ruby -->
+		<item id="9970" countmax="5" chance="14290"/><!-- small topaz -->
+		<item id="5911" chance="28570"/><!-- red piece of cloth -->
+		<item id="5909" chance="28570"/><!-- white piece of cloth -->
+		<item id="5914" chance="28570"/><!-- yellow piece of cloth -->
+		<item id="8473" countmax="5" chance="28570"/><!-- ultimate health potion-->
+		<item id="8472" countmax="5" chance="28570"/><!-- great spirit potion-->
+		<item id="6500" chance="14290"/><!-- demonic essence -->
+		<item id="7894" chance="10000"/><!-- magma legs -->
+		<item id="21400" chance="35000"/><!-- silver raid token -->
+		<item id="21725" chance="1500"/><!-- furious frock -->
+		<item id="7899" chance="14290"/><!-- magma coat -->
+		<item id="7891" chance="14290"/><!-- magma boots -->
+		<item id="2539" chance="10000"/><!-- phoenix shield -->
+		<item id="9971" chance="28570"/><!-- gold ingot -->
+		<item id="5944" countmax="10" chance="28570"/><!-- assassin star -->
+		<item id="2153" chance="10000"/><!-- violet gem -->
+		<item id="7456" chance="2080"/><!-- noble axe -->
+	</loot>
+</monster>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Werebadger" nameDescription="a werebadger" race="blood" experience="1600" speed="260" manacost="465">
+	<health now="1700" max="1700"/>
+	<look type="729" corpse="6034"/>
+	<targetchange interval="4000" chance="0"/>
+	<flags>
+        <flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="30"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="130" max="-500"/>
+	</attacks>
+	<defenses armor="35" defense="35"/>
+	<voices interval="5000" chance="10">
+		<voice sentence="SNUFFLE"/>
+		<voice sentence="SNUFFLEE"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="100" chance="25000"/>	<!-- gold -->
+		<item id="8473" countmax="2" chance="15000"/>	<!-- ultimate health potion -->
+		<item id="7588" countmax="2" chance="15000"/>	<!-- strong health potion -->
+		<item id="24879" chance="9000"/>	<!-- werebear fur -->
+		<item id="24883" chance="8000"/>	<!-- Werebear Skull -->
+		<item id="24914" chance="1000"/>	<!-- fur armor -->
+		<item id="24929" chance="500"/>	<!-- Werebadger trophy -->
+		<item id="24888" chance="1000"/>	<!-- Werewolf amulet -->
+		<item id="2152" countmax="3" chance="20000"/>	<!-- platinum coin -->
+	</loot>
+</monster>

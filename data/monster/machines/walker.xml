@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Walker" nameDescription="a walker" race="blood" experience="2200" speed="200" manacost="490">
+	<health now="3000" max="3000"/>
+	<look type="605" corpse="23356"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+	    <flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="60" attack="30"/>
+	</attacks>
+	<defenses armor="20" defense="20"/>
+	<elements>
+		<element energyPercent="25"/>
+		<element holyPercent="20"/>
+		<element earthPercent="-10"/>
+		<element deathPercent="-10"/>
+	</elements>
+	<loot>
+		<item id="2148" countmax="47" chance="82000"/><!-- gold coin -->
+		<item id="7618" chance="210"/><!-- health potion -->
+		<item id="2666" chance="30070"/><!-- meat -->
+	</loot>
+</monster>

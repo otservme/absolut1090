@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Glooth Battery" nameDescription="a glooth battery" race="venom" experience="3000" speed="0" manacost="0">
+	<health now="8000" max="8000"/>
+	<look typeex="23081" corpse="24309"/>
+	<targetchange interval="2000" chance="5"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag staticattack="90"/>
+		<flag lightlevel="0"/>
+		<flag lightcolor="0"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="poison" interval="2000" chance="18" radius="8" target="0" min="-200" max="-600">
+			<attribute key="areaEffect" value="poison"/>
+		</attack>
+	</attacks>
+	<elements>
+		<element firePercent="25"/>
+		<element holyPercent="25"/>
+		<element energyPercent="25"/>
+		<element icePercent="25"/>
+		<element earthPercent="5"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+	</immunities>
+	<loot>
+		<item id="9976" chance="2500"/><!-- crystal pedestal -->
+		<item id="9930" countmax="1" chance="5000"/><!-- flask of rust remover -->
+		<item id="9690" countmax="1" chance="10000"/><!-- gear wheel -->
+		<item id="23541" chance="3000"/><!-- gearwheel chain -->
+		<item id="7591" countmax="1" chance="10000"/><!-- great health potion -->
+		<item id="7590" countmax="1" chance="10000"/><!-- great mana potion -->
+		<item id="23538" chance="1200"/><!-- heat core -->
+		<item id="5880" countmax="1" chance="10000"/><!-- iron ore -->
+		<item id="23540" chance="1000"/><!-- metal spats -->
+		<item id="2152" countmax="5" chance="75000"/><!-- platinum coin -->
+		<item id="2645" chance="1000"/><!-- steel boots -->
+	</loot>
+</monster>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Vile Grandmaster" nameDescription="Vile Grandmaster" race="blood" experience="1500" speed="170" manacost="0">
+    <health now="1700" max="1700" />
+    <look type="268" head="86" body="0" legs="114" feet="94" addons="1" corpse="20318" />
+	<targetchange interval="4000" chance="0"/>
+	<strategy attack="70" defense="20"/>
+	<flags>
+                <flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="0" max="-260"/>
+		<attack name="physical" interval="2000" chance="15" range="7" min="-100" max="-350">
+			<attribute key="shootEffect" value="bolt"/>
+		</attack>
+	</attacks>
+	<defenses armor="15" defense="15">
+		<defense name="healing" interval="2000" chance="11" min="220" max="280">
+			<attribute key="areaEffect" value="greenshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element physicalPercent="-5"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="I will end this now!"/>
+		<voice sentence="Your gods wont help you!"/>
+		<voice sentence="Lets have a fight!"/>
+		<voice sentence="Is that the best, they can throw at me?"/>
+		<voice sentence="Youll make a fine trophy!"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="100" chance="83210"/>	<!-- gold coin -->
+		<item id="2050" countmax="2" chance="30000"/>	<!-- torch -->
+		<item id="2403" chance="9750"/>					<!-- knife -->
+		<item id="2399" countmax="14" chance="7210"/>	<!-- throwing star -->
+		<item id="7366" countmax="7" chance="4200"/>	<!-- viper star -->
+		<item id="2404" chance="4000"/>					<!-- combat knife -->
+		<item id="2457" chance="3190"/>					<!-- steel helmet -->
+		<item id="2510" chance="1910"/>					<!-- plate shield -->
+		<item id="2513" chance="1560"/>					<!-- battle shield -->
+		<item id="2509" chance="940"/>					<!-- steel shield -->
+		<item id="3968" chance="480"/>					<!-- leopard armor -->
+		<item id="3969" chance="240"/>					<!-- horseman helmet -->
+		<item id="2145" chance="220"/>					<!-- small diamond -->
+	</loot>
+</monster>

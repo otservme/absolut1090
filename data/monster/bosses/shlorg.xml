@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Shlorg" nameDescription="Shlorg" race="venom" experience="0" speed="270" manacost="0">
+	<health now="100" max="100"/>
+	<look type="565" corpse="21299"/>
+	<targetchange interval="60000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+                <flag rewardchest="1" />
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag staticattack="90"/>
+		<flag lightlevel="0"/>
+		<flag lightcolor="0"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="150" attack="50" poison="180"/>
+		<attack name="lifedrain" interval="2000" chance="10" length="4" spread="0" min="-90" max="-180">
+			<attribute key="areaEffect" value="greenshimmer"/>
+		</attack>
+		<attack name="physical" interval="2000" chance="14" radius="5" target="0" min="-0" max="-150">
+			<attribute key="areaEffect" value="greenbubble"/>
+		</attack>
+		<attack name="poisoncondition" interval="2000" chance="13" radius="5" target="0" min="-360" max="-440">
+			<attribute key="areaEffect" value="greenbubble"/>
+		</attack>
+		<attack name="shlorg paralyze" interval="2000" chance="11"/>
+	</attacks>
+	<defenses armor="10" defense="15">
+		<defense name="healing" interval="2000" chance="35" min="95" max="150">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<immunities>
+		<immunity name="physical"/>
+		<immunity name="death"/>
+		<immunity name="holy"/>
+		<immunity name="ice"/>
+		<immunity name="energy"/>
+		<immunity name="fire"/>
+		<immunity name="poison"/>
+		<immunity name="drown"/>
+		<immunity name="lifedrain"/>
+		<immunity name="paralyze"/>
+		<immunity name="drunk"/>
+		<immunity name="invisible"/>
+	</immunities>
+	<voices interval="2000" chance="5">
+		<voice sentence="Tchhh!"/>
+		<voice sentence="Slurp!"/>
+	</voices>
+</monster>

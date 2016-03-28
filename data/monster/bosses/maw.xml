@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Maw" nameDescription="a maw" race="blood" experience="6400" speed="290" manacost="0">
+	<health now="8200" max="8200"/>
+	<look type="458" corpse="15354"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+        <flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="60"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="200" attack="140"/>
+		<attack name="physical" interval="2000" chance="15" range="7" min="0" max="-780">
+			<attribute key="shootEffect" value="largerock"/>
+		</attack>
+	</attacks>
+	<defenses armor="60" defense="60">
+		<defense name="speed" interval="2000" chance="15" speedchange="520" duration="5000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+		<defense name="healing" interval="2000" chance="15" min="400" max="900">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element physicalPercent="40"/>
+		<element firePercent="30"/>
+		<element icePercent="10"/>
+		<element earthPercent="20"/>
+		<element energyPercent="-10"/>
+		<element holyPercent="-5"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="2000" chance="7">
+		<voice sentence="kropp!"/>
+		<voice sentence="zopp!"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="100" chance="49090"/><!-- gold coin -->
+		<item id="2148" countmax="97" chance="50500"/><!-- gold coin -->
+		<item id="2152" countmax="3" chance="68000"/><!-- platinum coin -->
+		<item id="15480" chance="300000"/><!-- kollos shell -->
+		<item id="15486" chance="300000"/><!-- compound eye -->
+		<item id="15648" countmax="5" chance="10410"/><!-- tarsal arrow -->
+		<item id="2147" countmax="2" chance="10180"/><!-- small ruby -->
+		<item id="7590" countmax="4" chance="9150"/><!-- great mana potion -->
+		<item id="9971" chance="5460"/><!-- gold ingot -->
+		<item id="8473" countmax="3" chance="4300"/><!-- ultimate health potion -->
+		<item id="2214" chance="3570"/><!-- ring of healing -->
+		<item id="7632" chance="2900"/><!-- giant shimmering pearl -->
+		<item id="15646" chance="760"/><!-- buggy backpack -->
+		<item id="15489" chance="560"/><!-- calopteryx cape -->
+		<item id="15492" chance="900"/><!-- hive scythe -->
+		<item id="2645" chance="330"/><!-- steel boots -->
+		<item id="15491" chance="510"/><!-- carapace shield -->
+	</loot>
+</monster>

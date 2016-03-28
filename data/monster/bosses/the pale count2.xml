@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="The Pale Count" nameDescription="the pale count" race="undead" experience="0" speed="200" manacost="0">
+	<health now="25000" max="25000"/>
+	<look type="557" corpse="0"/>
+	<targetchange interval="2000" chance="4"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+        <flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+  	<script>
+		<event name="the pale count tp"/>
+	</script>
+	<attacks>
+		<attack name="melee" interval="2000" skill="90" attack="50"/>
+		<attack name="physical" interval="2000" chance="30" range="7" min="-0" max="-300">
+			<attribute key="shootEffect" value="sniperarrow"/>
+		</attack>
+		<attack name="the pale count bomb" interval="2000" chance="13" range="7" min="-400" max="-500"/>
+		<attack name="the pale count wave" interval="2000" chance="10" min="-150" max="-300"/>
+		<attack name="bleedcondition" interval="2000" chance="18" range="7" radius="4" target="1" min="-400" max="-500">
+			<attribute key="shootEffect" value="throwingknife"/>
+			<attribute key="areaEffect" value="redspark"/>
+		</attack>
+		<attack name="lifedrain" interval="2000" chance="18" range="1" min="-150" max="-300"/>
+	</attacks>
+	<defenses armor="17" defense="23">
+		<defense name="healing" interval="2000" chance="30" min="350" max="600">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="outfit" interval="2000" chance="12" monster="nightfiend" duration="15000">
+			<attribute key="areaEffect" value="energy"/>
+		</defense>
+		<defense name="invisible" interval="2000" chance="12" duration="25000">
+			<attribute key="areaEffect" value="bats"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element physicalPercent="30"/>
+		<element energyPercent="30"/>
+		<element earthPercent="30"/>
+		<element icePercent="30"/>
+		<element firePercent="15"/>
+		<element holyPercent="30"/>
+	</elements>
+	<immunities>
+		<immunity death="1"/>
+		<immunity lifedrain="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="2000" chance="5">
+		<voice sentence="Ah, the smell of warm blood and beating heart!"/>
+		<voice sentence="I will squish you like a maggot and suck you dry!"/>
+		<voice sentence="The monsters in the mirror will come eat your dreams."/>
+		<voice sentence="Your pitiful life has come to an end!"/>
+		<voice sentence="Yield to the inevitable!"/>
+		<voice sentence="Some day I shall see my beautiful face in a mirror again."/>
+	</voices>
+</monster>

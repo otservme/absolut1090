@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Gaz'haragoth" nameDescription="gaz'haragoth" race="fire" experience="1000000" speed="480" manacost="0">
+	<health now="350000" max="350000"/>
+	<look type="591" corpse="22562"/>
+	<targetchange interval="2000" chance="10"/>
+	<strategy attack="70" defense="10"/>
+	<flags>
+                <flag rewardchest="1" />
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag staticattack="90"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+  	<script>
+		<event name="Gaz'haragoth heal"/>
+	</script>
+
+	<attacks>
+		<attack name="melee" interval="2000" skill="215" attack="400"/>
+		<attack name="fire" interval="2000" chance="14" length="8" spread="0" min="-1600" max="-3400">
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+		<attack name="death" interval="2000" chance="13" length="8" spread="3" min="-100" max="-1000">
+			<attribute key="areaEffect" value="poff"/>
+		</attack>
+		<attack name="death" interval="2000" chance="19" range="7" target="1" radius="6" min="-100" max="-800">
+			<attribute key="shootEffect" value="suddendeath"/>
+			<attribute key="areaEffect" value="mortarea"/>
+		</attack>
+		<attack name="death" interval="2000" chance="13" range="7" target="0" radius="8" min="-100" max="-800">
+			<attribute key="areaEffect" value="mortarea"/>
+		</attack>
+		<attack name="gaz'haragoth iceball" interval="2000" chance="24" min="-1000" max="-1000"/>
+		<attack name="gaz'haragoth death" interval="4000" chance="6"/>
+        	<attack name="gaz'haragoth paralyze" interval="2000" chance="12"/>
+		<attack name="gaz'haragoth summon" interval="2000" chance="8"/>
+	</attacks>
+	<defenses armor="90" defense="111">
+		<defense name="healing" interval="2000" chance="65" min="2500" max="3500">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element firePercent="50"/>
+		<element earthPercent="50"/>
+		<element deathPercent="50"/>
+		<element icePercent="50"/>
+		<element energyPercent="50"/>
+		<element holyPercent="50"/>
+		<element physicalPercent="50"/>
+	</elements>
+	<immunities>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="2000" chance="5">
+		<voice sentence="NO ONE WILL ESCAPE ME!" yell="1"/>
+		<voice sentence="I'LL KEEP THE ORDER UP!" yell="1"/>
+		<voice sentence="You puny humans will be my snacks!"/>
+		<voice sentence="I've beaten tougher demons then you even know!"/>
+	</voices>
+	<loot>
+		<item id="22396" countmax="14" chance="100000"/><!-- cluster of solace -->
+		<item id="2195" chance="25000"/><!-- boots of haste -->
+		<item id="22397" countmax="3" chance="100000"/><!-- dream matter -->
+		<item id="22598" countmax="3" chance="100000"/><!-- unrealized dream -->
+		<item id="6500" countmax="2" chance="100000"/><!-- demonic essence -->
+		<item id="5954" chance="50000"/><!-- demon horn -->
+		<item id="2152" countmax="50" chance="100000"/><!-- platinum coin -->
+		<item id="8473" countmax="100" chance="100000"/><!-- ultimate health potion -->
+		<item id="8472" countmax="100" chance="100000"/><!-- great spirit potion -->
+		<item id="7590" countmax="100" chance="100000"/><!-- great mana potion -->
+		<item id="7591" countmax="100" chance="100000"/><!-- great health potion -->
+		<item id="2160" countmax="6" chance="100000"/><!-- crystal coin -->
+		<item id="7368" countmax="100" chance="50000"/><!-- assassin star -->
+		<item id="6529" countmax="100" chance="50000"/><!-- infernal bolt -->
+		<item id="2168" chance="25000"/><!-- life ring -->
+		<item id="22613" chance="25000"/><!-- eye pod -->
+		<item id="22614" chance="25000"/><!-- nightmare beacon -->
+		<item id="22608" chance="25000"/><!-- nightmare horn -->
+		<item id="22611" chance="25000"/><!-- psychodelic tapestry -->
+		<item id="22612" chance="25000"/><!-- demonic tapestry -->
+		<item id="5911" chance="25000"/><!-- red piece of cloth -->
+		<item id="5914" chance="25000"/><!-- yellow piece of cloth -->
+		<item id="5741" chance="25000"/><!-- skull helmet -->
+		<item id="2470" chance="25000"/><!-- golden legs -->
+		<item id="7899" chance="25000"/><!-- magma coat -->
+		<item id="22398" chance="25000"/><!-- crude umbral blade -->
+		<item id="22399" chance="15000"/><!-- umbral blade -->
+		<item id="22400" chance="10000"/><!-- umbral master blade -->
+		<item id="22401" chance="25000"/><!-- crude umbral slayer -->
+		<item id="22402" chance="15000"/><!-- umbral slayer -->
+		<item id="22403" chance="10000"/><!-- umbral master slayer -->
+		<item id="22404" chance="25000"/><!-- crude umbral axe -->
+		<item id="22405" chance="15000"/><!-- umbral axe -->
+		<item id="22406" chance="10000"/><!-- umbral master axe -->
+		<item id="22407" chance="25000"/><!-- crude umbral chopper -->
+		<item id="22408" chance="15000"/><!-- umbral chopper -->
+		<item id="22409" chance="10000"/><!-- umbral master chopper -->
+		<item id="22410" chance="25000"/><!-- crude umbral mace -->
+		<item id="22411" chance="15000"/><!-- umbral mace -->
+		<item id="22412" chance="10000"/><!-- umbral master mace -->
+		<item id="22413" chance="25000"/><!-- crude umbral hammer -->
+		<item id="22414" chance="15000"/><!-- umbral hammer -->
+		<item id="22415" chance="10000"/><!-- umbral master hammer -->
+		<item id="22416" chance="25000"/><!-- crude umbral bow -->
+		<item id="22417" chance="15000"/><!-- umbral bow -->
+		<item id="22418" chance="10000"/><!-- umbral master bow -->
+		<item id="22419" chance="25000"/><!-- crude umbral crossbow -->
+		<item id="22420" chance="15000"/><!-- umbral crossbow -->
+		<item id="22421" chance="10000"/><!-- umbral master crossbow -->
+		<item id="22422" chance="25000"/><!-- crude umbral spellbook -->
+		<item id="22423" chance="15000"/><!-- umbral spellbook -->
+		<item id="22424" chance="10000"/><!-- umbral master spellbook -->
+		<item id="22609" chance="25000"/><!-- dream warden claw -->
+		<item id="22610" chance="25000"/><!-- dream warden mask -->
+		<item id="18413" countmax="5" chance="100000"/><!-- blue crystal shard -->
+		<item id="18414" countmax="5" chance="100000"/><!-- violet crystal shard -->
+		<item id="18418" countmax="15" chance="100000"/><!-- blue crystal splinter -->
+		<item id="18417" countmax="15" chance="100000"/><!-- brown crystal splinter -->
+		<item id="18416" countmax="15" chance="100000"/><!-- green crystal splinter -->
+		<item id="7632" chance="50000"/><!-- giant shimmering pearl -->
+		<item id="7633" chance="50000"/><!-- giant shimmering pearl -->
+		<item id="2158" chance="50000"/><!-- blue gem -->
+		<item id="11262" chance="100000"/><!-- solitude charm -->
+		<item id="11261" chance="100000"/><!-- twin sun charm -->
+		<item id="11260" chance="100000"/><!-- spiritual charm -->
+		<item id="11259" chance="100000"/><!-- unity charm -->
+		<item id="11258" chance="100000"/><!-- phoenix charm -->
+	</loot>
+</monster>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Wereboar" nameDescription="a wereboar" race="blood" experience="2000" speed="260" manacost="465">
+	<health now="2200" max="2200"/>
+	<look type="721" corpse="13308"/>
+	<targetchange interval="4000" chance="0"/>
+	<flags>
+        <flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="30"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="100" max="-309"/>
+	</attacks>
+	<defenses armor="35" defense="35"/>
+	<voices interval="5000" chance="10">
+		<voice sentence="Grunt Grunt"/>
+		<voice sentence="Grunt"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="75" chance="25000"/>	<!-- gold -->
+		<item id="8473" countmax="2" chance="15000"/>	<!-- ultimate health potion -->
+		<item id="7588" countmax="2" chance="15000"/>	<!-- strong health potion -->
+		<item id="24881" chance="12000"/>	<!-- wereboar hoove -->
+		<item id="24915" chance="12000"/>	<!-- Wereboar Loincloth -->
+		<item id="24882" chance="12000"/>	<!-- Wereboar Tusks -->
+		<item id="2197" chance="5000"/>	<!-- stone skin amulet -->
+		<item id="7439" chance="3000"/>	<!-- berserket potion -->
+		<item id="7432" chance="4000"/>	<!-- furry club -->
+		<item id="7419" chance="2000"/>	<!-- Dreaded Cleaver -->
+		<item id="24913" chance="1500"/>	<!-- fur armor -->
+		<item id="24930" chance="1500"/>	<!-- Wereboar trophy -->
+		<item id="24888" chance="700"/>	<!-- Werewolf amulet -->
+		<item id="24881" chance="12000"/>	<!-- wereboar hoove -->
+		<item id="2152" countmax="2" chance="20000"/>	<!-- platinum coin -->
+	</loot>
+</monster>

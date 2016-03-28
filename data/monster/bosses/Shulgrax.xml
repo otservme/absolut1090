@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Shulgrax" nameDescription="Shulgrax" race="venom" experience="58000" speed="320" manacost="0">
+	<health now="220000" max="220000" />
+        <look type="842" head="0" body="115" legs="117" feet="87" addons="1" corpse="6068" />
+	<targetchange interval="5000" chance="8" />
+	<flags>
+                <flag rewardchest="1" />
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="2500" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-200" max="-3000"/>
+		<attack name="manadrain" interval="2000" chance="10" range="7" min="-200" max="-1000"/>
+		<attack name="physical" interval="3000" chance="44" range="7" min="-400" max="-2000">
+			<attribute key="shootEffect" value="whirlwindsword"/>
+			<attribute key="areaEffect" value="redspark"/>
+		</attack>
+		<attack name="speed" interval="2000" chance="15" range="7" speedchange="-400" duration="15000">
+			<attribute key="shootEffect" value="throwingknife"/>
+		</attack>
+		<attack name="ice" interval="2000" chance="20" range="7" radius="7" target="0" min="0" max="-800">
+			<attribute key="areaEffect" value="bigplants"/>
+		</attack>
+	</attacks>
+	<defenses armor="55" defense="65">
+		<defense name="healing" interval="3000" chance="35" min="400" max="6000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="speed" interval="4000" chance="80" speedchange="440" duration="6000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element earthPercent="10"/>
+		<element holyPercent="10"/>
+		<element firePercent="10"/>
+		<element energyPercent="10"/>
+		<element icePercent="10"/>
+		<element physicalPercent="10"/>
+		<element deathPercent="10"/>
+	</elements>
+	<immunities>
+		<immunity earth="1" />
+		<immunity paralyze="1" />
+		<immunity energy="1" />
+		<immunity fire="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="5000" chance="30">
+		<voice sentence="DAMMMMNNNNAAATIONN!"/>
+		<voice sentence="I WILL FEAST ON YOUR SOUL!" yell="1"/>
+		<voice sentence="YOU ARE ALL DAMNED!" yell="1"/>
+	</voices>
+	<loot>
+		<item id="25655" countmax="1" chance="1000000"/>	<!-- silver token -->
+		<item id="2148" countmax="184" chance="98000"/>	<!-- gold coin -->
+		<item id="7896" chance="4000"/>				<!-- glacier kilt -->
+		<item id="7632" countmax="5" chance="14000"/>	<!-- giant shimmering pearl -->
+		<item id="7633" countmax="5" chance="14000"/>	<!-- giant shimmering pearl -->
+		<item id="2146" countmax="98" chance="12000"/>	<!-- small sapphire -->
+		<item id="2143" countmax="88" chance="12000"/>	<!-- white pearl -->
+		<item id="2150" countmax="54" chance="10000"/>	<!-- small amethyst -->
+		<item id="9970" countmax="87" chance="10000"/>	<!-- small topaz -->
+		<item id="2152" countmax="58" chance="8000"/>	<!-- platinum coin -->
+		<item id="6500" chance="11000"/>	<!-- demonic essence -->
+		<item id="2156" chance="15000"/>	<!-- red gem -->
+		<item id="2154" chance="14000"/>	<!-- yellow gem -->
+		<item id="7427" chance="7000"/>	<!-- chaos mace -->
+		<item id="7419" chance="13000"/>	<!-- dreaded cleaver -->
+		<item id="2136" chance="18000"/>	<!-- demonbone amulet -->
+		<item id="7416" chance="4000"/>	<!-- bloody edge -->
+		<item id="20118" chance="8000"/>	<!-- pair of iron fists  -->
+		<item id="7451" chance="9000"/>	<!-- shadow sceptre  -->
+		<item id="25894" chance="160"/>					<!-- lance novo -->
+		<item id="7888" chance="870"/>					<!-- glacier amulet -->
+		<item id="26005" chance="370"/>					<!-- rift crossbow -->
+		<item id="25865" chance="310"/>					<!-- rift lance -->
+		<item id="25864" chance="420"/>					<!-- rift shield -->
+	</loot>
+</monster>

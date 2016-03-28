@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<raid>
+
+  <announce delay="1000" type="Event" message="Beware of the Yeti." />
+  
+  <singlespawn delay="1000" name="Yeti" x="32016" y="31598" z="7" />
+  <singlespawn delay="1000" name="Yeti" x="32018" y="31598" z="7" />
+  <singlespawn delay="1000" name="Yeti" x="32017" y="31596" z="7" />
+
+</raid>

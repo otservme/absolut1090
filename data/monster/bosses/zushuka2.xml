@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Zushuka" nameDescription="a zushuka" race="blood" experience="9000" speed="300" manacost="0">
+	<health now="15000" max="15000"/>
+	<look type="149" head="86" body="10" legs="19" feet="5" addons="0" corpse="20426"/>
+	<targetchange interval="2000" chance="5"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag staticattack="90"/>
+		<flag lightlevel="0"/>
+		<flag lightcolor="0"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="80" attack="100"/>
+		<attack name="outfit" interval="2000" chance="13" range="7" radius="7" item="7171" duration="8000">
+			<attribute key="areaEffect" value="icetornado"/>
+			<attribute key="shootEffect" value="snowball"/>
+		</attack>
+		<attack name="zushuka freeze" interval="2000" chance="14" range="7"/>
+		<attack name="bleedcondition" interval="2000" chance="14" target="1" range="7" min="-150" max="-300">
+			<attribute key="areaEffect" value="giantice"/>
+			<attribute key="shootEffect" value="smallice"/>
+		</attack>
+		<attack name="ice" interval="2000" chance="13" length="6" spread="3" min="-200" max="-500">
+			<attribute key="areaEffect" value="icetornado"/>
+		</attack>
+		<attack name="lifedrain" interval="2000" chance="13" length="13" spread="3" min="-400" max="-550">
+			<attribute key="areaEffect" value="iceattack"/>
+		</attack>
+		<attack name="zushuka paralyze" interval="2000" chance="10" range="7"/>
+	</attacks>
+	<defenses armor="15" defense="20">
+		<defense name="healing" interval="2000" chance="25" min="435" max="460">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="zushuka heal" interval="1000" chance="100"/>
+	</defenses>
+	<elements>
+		<element firePercent="50"/>
+		<element earthPercent="40"/>
+		<element holyPercent="50"/>
+		<element energyPercent="-5"/>
+		<element deathPercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+		<immunity ice="1"/>
+	</immunities>
+	<voices interval="2000" chance="5">
+		<voice sentence="Is this all you've got?"/>
+		<voice sentence="Cool down, will you?"/>
+		<voice sentence="And stay cool."/>
+		<voice sentence="Your cold body will be a marvelous ice statue."/>
+	</voices>
+	<loot>
+		<item id="7290" chance="53850"/><!-- shard -->
+		<item id="21400" chance="100000"/><!-- silver raid token -->
+		<item id="21699" chance="1500"/><!-- trapped lightning -->
+		<item id="2148" countmax="200" chance="92310"/><!-- gold coin -->
+		<item id="7892" chance="38460"/><!-- glacier shoes -->
+		<item id="21700" chance="1500"/><!-- icy culotte -->
+		<item id="7896" chance="15380"/><!-- glacier kilt -->
+		<item id="7897" chance="7690"/><!-- glacier robe -->
+		<item id="7902" chance="7690"/><!-- glacier mask -->
+		<item id="9971" chance="15380"/><!-- gold ingot -->
+		<item id="7440" chance="30770"/><!-- mastermind potion -->
+		<item id="7439" chance="30770"/><!-- berserk potion -->
+		<item id="7443" chance="38460"/><!-- bullseye potion -->
+		<item id="5912" chance="15380"/><!-- blue piece of cloth -->
+		<item id="5911" chance="7690"/><!-- red piece of cloth -->
+		<item id="5909" chance="30770"/><!-- white piece of cloth -->
+		<item id="7449" chance="46150"/><!-- crystal sword -->
+		<item id="2445" chance="15380"/><!-- crystal mace -->
+		<item id="2396" chance="38460"/><!-- ice rapier -->
+		<item id="2168" chance="38460"/><!-- life ring -->
+		<item id="2158" chance="30770"/><!-- blue gem -->
+		<item id="7459" chance="15380"/><!-- earmuffs -->
+		<item id="7888" chance="23080"/><!-- glacier amulet -->
+		<item id="7590" countmax="5" chance="23080"/><!-- great mana potion -->
+		<item id="7591" countmax="5" chance="23080"/><!-- great health potion -->
+		<item id="8472" countmax="5" chance="46150"/><!-- great spirit potion -->
+		<item id="2201" chance="15380"/><!-- dragon necklace -->
+		<item id="2195" chance="7690"/><!-- boots of haste -->
+		<item id="2436" chance="15380"/><!-- skull staff -->
+	</loot>
+</monster>

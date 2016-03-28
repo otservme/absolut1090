@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="The Lord of the Lice" nameDescription="The Lord of the Lice" race="venom" experience="12000" speed="320" manacost="0">
+	<health now="50000" max="50000" />
+        <look type="305" corpse="6068" />
+	<targetchange interval="5000" chance="8" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="2500" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-400" max="-650" />
+		<attack name="manadrain" interval="2000" chance="40" range="7" min="-400" max="-800">
+			<attribute key="areaEffect" value="redshimmer" />
+		</attack>
+		<attack name="poison" interval="3000" chance="20" radius="6" target="0" min="-350" max="-250">
+			<attribute key="areaEffect" value="poison" />
+		</attack>
+		<attack name="energy" interval="2000" chance="40" radius="6" target="0" min="-400" max="-500">
+			<attribute key="areaEffect" value="energy" />
+		</attack>
+		<attack name="manadrain" interval="2000" chance="50" radius="6" target="0" min="-320" max="-405">
+			<attribute key="areaEffect" value="redshimmer" />
+		</attack>
+		<attack name="lifedrain" interval="2000" chance="30" radius="6" target="0" min="-200" max="-450">
+			<attribute key="areaEffect" value="poff" />
+		</attack>
+		<attack name="effect" interval="3000" chance="30" radius="5" target="0" min="-300" max="-700">
+			<attribute key="areaEffect" value="blackspark" />
+		</attack>
+		<attack name="firecondition" interval="3000" chance="20" range="7" radius="7" target="1" min="-200" max="-800">
+			<attribute key="shootEffect" value="fire" />
+			<attribute key="areaEffect" value="firearea" />
+		</attack>
+		<attack name="lifedrain" interval="2000" chance="25" length="8" spread="0" min="-50" max="-250">
+			<attribute key="areaEffect" value="greenspark" />
+		</attack>
+	</attacks>
+	<defenses armor="100" defense="120">
+		<defense name="healing" interval="2000" chance="10" min="900" max="1500">
+			<attribute key="areaEffect" value="greenshimmer" />
+		</defense>
+		<defense name="speed" interval="3000" chance="30" speedchange="360" duration="7000">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+		<defense name="invisible" interval="4000" chance="20" duration="5000">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+	</defenses>
+	<elements>
+		<element earthPercent="10"/>
+		<element holyPercent="10"/>
+		<element firePercent="10"/>
+		<element energyPercent="10"/>
+		<element icePercent="10"/>
+		<element physicalPercent="10"/>
+		<element deathPercent="10"/>
+	</elements>
+	<immunities>
+		<immunity earth="1" />
+		<immunity paralyze="1" />
+		<immunity energy="1" />
+		<immunity fire="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<loot>
+		<item id="2148" countmax="184" chance="98000"/>	<!-- gold coin -->
+		<item id="7896" chance="4000"/>				<!-- glacier kilt -->
+		<item id="7632" countmax="5" chance="14000"/>	<!-- giant shimmering pearl -->
+		<item id="2146" countmax="98" chance="12000"/>	<!-- small sapphire -->
+		<item id="2143" countmax="88" chance="12000"/>	<!-- white pearl -->
+		<item id="2150" countmax="54" chance="10000"/>	<!-- small amethyst -->
+		<item id="9970" countmax="87" chance="10000"/>	<!-- small topaz -->
+		<item id="2152" countmax="58" chance="8000"/>	<!-- platinum coin -->
+		<item id="2148" countmax="236" chance="98000"/>	<!-- gold coin -->
+		<item id="2672" countmax="2" chance="60000"/>	<!-- dragon ham -->
+	</loot>
+</monster>

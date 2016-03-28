@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Zamulosh" nameDescription="Zamulosh" race="venom" experience="55000" speed="320" manacost="0">
+	<health now="350000" max="350000" />
+        <look type="862" head="16" body="12" legs="73" feet="55" addons="0" corpse="6068" />
+	<targetchange interval="5000" chance="8" />
+	<flags>
+                <flag rewardchest="1" />
+		<flag summonable="0" />
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="3000" skill="300" attack="150"/>
+		<attack name="physical" interval="1000" chance="10" radius="4" target="0" min="-700" max="-800">
+			<attribute key="areaEffect" value="mortarea"/>
+		</attack>
+		<attack name="energy" interval="2000" chance="20" radius="4" target="0" min="-600" max="-1300">
+			<attribute key="shootEffect" value="energy"/>
+			<attribute key="areaEffect" value="energy"/>
+		</attack>
+		<attack name="fire" interval="1000" chance="20" length="5" spread="2" min="-900" max="-1500">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+	</attacks>
+	<elements>
+		<element deathPercent="15"/>
+		<element firePercent="15"/>
+		<element energyPercent="15"/>
+		<element icePercent="15"/>
+		<element physicalPercent="10"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity earth="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<summons maxSummons="2">
+		<summon name="Zamuloshfake" interval="3000" chance="80" max="6" />
+	</summons>
+	<voices interval="5000" chance="10">
+		<voice sentence="I AM ZAMULOSH!"/>
+	</voices>
+	<loot>
+		<item id="25655" countmax="1" chance="1000000"/>	<!-- silver token -->
+		<item id="2148" countmax="184" chance="98000"/>	<!-- gold coin -->
+		<item id="7896" chance="4000"/>				<!-- glacier kilt -->
+		<item id="7632" countmax="5" chance="14000"/>	<!-- giant shimmering pearl -->
+		<item id="7633" countmax="5" chance="14000"/>	<!-- giant shimmering pearl -->
+		<item id="2146" countmax="98" chance="12000"/>	<!-- small sapphire -->
+		<item id="2143" countmax="88" chance="12000"/>	<!-- white pearl -->
+		<item id="2150" countmax="54" chance="10000"/>	<!-- small amethyst -->
+		<item id="9970" countmax="87" chance="10000"/>	<!-- small topaz -->
+		<item id="2152" countmax="58" chance="8000"/>	<!-- platinum coin -->
+		<item id="6500" chance="11000"/>	<!-- demonic essence -->
+		<item id="2156" chance="15000"/>	<!-- red gem -->
+		<item id="2154" chance="14000"/>	<!-- yellow gem -->
+		<item id="2165" chance="7000"/>	<!-- chaos mace -->
+		<item id="2206" chance="13000"/>
+		<item id="2136" chance="18000"/>	
+		<item id="2158" chance="4000"/>	
+		<item id="2214" chance="8000"/>	
+		<item id="26005" chance="570"/>					<!-- rift crossbow -->
+		<item id="25900" chance="410"/>					<!-- maimer -->
+		<item id="25893" chance="320"/>					<!-- book of lies -->
+	</loot>
+</monster>

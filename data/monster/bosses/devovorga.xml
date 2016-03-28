@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<monster name="Devovorga" nameDescription="Devovorga" race="venom" experience="700000" speed="350" manacost="0">
+	<health now="1000000" max="1000000" />
+	<look type="354"/>
+	<targetchange interval="2000" chance="7" />
+	<strategy attack="100" defense="20" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1200" min="-0" max="-3100"/>
+		<attack name="lifedrain" interval="2000" chance="7" length="8" spread="0" min="-0" max="-1110">
+			<attribute key="areaEffect" value="redspark"/>
+		</attack>
+		<attack name="earth" interval="2000" chance="15" radius="6" target="0" min="-0" max="-450">
+			<attribute key="areaEffect" value="bigplants"/>
+		</attack>
+		<attack name="poisoncondition" interval="3000" chance="28" radius="7" target="0" max="-950">
+			<attribute key="areaEffect" value="carniphila"/>
+		</attack>
+		<attack name="cursecondition" interval="4000" chance="35" radius="7" target="0" max="-1200">
+			<attribute key="areaEffect" value="smallclouds"/>
+		</attack>
+	</attacks>
+	<defenses armor="40" defense="39">
+		<defense name="healing" interval="3000" chance="20" min="2000" max="3000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<immunities>
+		<immunity paralyze="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="3000" chance="10">
+		<voice sentence="Slurp!"/>
+		<voice sentence="See how weak you are?"/>
+		<voice sentence="I tried to save you, but there's no use."/>
+		<voice sentence="My soul, power, hatred, knowledge and fury are far away."/>
+	</voices>
+</monster>

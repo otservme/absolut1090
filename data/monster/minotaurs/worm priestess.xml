@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Worm Priestess" nameDescription="a worm priestess" race="blood" experience="1500" speed="200" manacost="0">
+	<health now="1100" max="1100"/>
+	<look type="613" corpse="23463"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+        <flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="4"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="0" max="-40"/>
+		<attack name="energy" interval="2000" chance="15" range="7" min="0" max="-165">
+			<attribute key="shootEffect" value="energy"/>
+			<attribute key="areaEffect" value="energy"/>
+		</attack>
+		<attack name="fire" interval="2000" chance="15" range="7" min="0" max="-105">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+		<attack name="energyfield" interval="2000" chance="10" range="7" target="1">
+			<attribute key="shootEffect" value="energyball"/>
+		</attack>
+	</attacks>
+	<defenses armor="20" defense="20"/>
+	<elements>
+		<element energyPercent="25"/>
+		<element holyPercent="20"/>
+		<element earthPercent="-10"/>
+		<element deathPercent="-10"/>
+	</elements>
+	<voices interval="5000" chance="10">
+		<voice sentence="An enemy of the worm shall become his food!"/>
+		<voice sentence="The great worm will swallow you!"/>
+	</voices>
+	<loot>
+	<item id="2148" countmax="150" chance="100000"/><!-- gold coin -->
+	<item id="2152" countmax="3" chance="40220"/><!-- platinum coin -->
+	<item id="12429" chance="15800"/><!-- purple robe -->
+	<item id="7589" countmax="3" chance="12180"/><!-- strong mana potion -->
+	<item id="2182" chance="11890"/><!-- snakebite rod -->
+	<item id="7425" chance="5030"/><!-- taurus mace -->
+	<item id="2050" chance="5030"/><!-- torch -->
+	<item id="12428" countmax="2" chance="2910"/><!-- minotaur horn -->
+	<item id="2150" countmax="2" chance="2560"/><!-- small amethyst -->
+	<item id="2145" countmax="2" chance="2490"/><!-- small diamond -->
+	<item id="9970" countmax="2" chance="2460"/><!-- small topaz -->
+	<item id="2147" countmax="2" chance="2410"/><!-- small ruby -->
+	<item id="2149" countmax="2" chance="2390"/><!-- small emerald -->
+	<item id="2146" countmax="2" chance="2350"/><!-- small sapphire -->
+	<item id="5912" chance="1610"/><!-- blue piece of cloth -->
+	<item id="8910" chance="1520"/><!-- underworld rod -->
+	<item id="5911" chance="1450"/><!-- red piece of cloth -->
+	<item id="5910" chance="1430"/><!-- green piece of cloth -->
+	<item id="2154" chance="540"/><!-- yellow gem -->
+	<item id="2156" chance="490"/><!-- red gem -->
+	<item id="1898" chance="140"/><!-- minotaur trophy -->
+	</loot>
+</monster>

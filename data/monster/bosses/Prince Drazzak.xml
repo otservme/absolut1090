@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Prince Drazzak" nameDescription="Prince Drazzak" race="fire" experience="50000" speed="480" manacost="0">
+	<health now="300000" max="300000"/>
+	<look type="12" head="77" body="78" legs="94" feet="54" addons="0" corpse="6068"/>
+	<targetchange interval="2000" chance="25"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+        <flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag staticattack="90"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="2000"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="190" attack="100"/>
+		<attack name="prince drazzak wave" interval="2000" chance="25" min="-0" max="-3400"/>
+		<attack name="prince drazzak knight" interval="2000" chance="2"/>
+		<attack name="prince drazzak sorcerer" interval="2000" chance="2"/>
+		<attack name="prince drazzak paladin" interval="2000" chance="2"/>
+		<attack name="prince drazzak druid" interval="2000" chance="2"/>
+		<attack name="prince drazzak tp" interval="2000" chance="3"/>
+		<attack name="death" interval="2000" chance="18" length="8" spread="0" min="-1000" max="-3000">
+			<attribute key="areaEffect" value="mortarea"/>
+		</attack>
+	</attacks>
+	<defenses armor="55" defense="65">
+		<defense name="healing" interval="2000" chance="30" min="4500" max="6000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element firePercent="30"/>
+		<element earthPercent="30"/>
+		<element deathPercent="30"/>
+		<element icePercent="30"/>
+		<element energyPercent="30"/>
+		<element holyPercent="30"/>
+		<element physicalPercent="30"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity outfit="1"/>
+		<immunity drunk="1"/>
+		<immunity lifedrain="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<summons maxSummons="3">
+		<summon name="Demon" interval="3000" chance="12"/>
+	</summons>
+	<voices interval="2000" chance="5">
+		<voice sentence="EVEN WITH ALL THAT TIME IN THE PRISON THAT WEAKEND ME, YOU ARE NO MATCH TO ME!" yell="1"/>
+		<voice sentence="VARIPHOR WILL RULE!" yell="1"/>
+		<voice sentence="THEY WILL ALL PAY!" yell="1"/>
+		<voice sentence="NOT EVEN AEONS OF IMPRISONMENT WILL STOP ME!" yell="1"/>
+		<voice sentence="They used you fools to escape and they left ME behind!!??"/>
+	</voices>
+	<loot>
+		<item id="22396" countmax="14" chance="100000"/><!-- cluster of solace -->
+		<item id="2195" chance="25000"/><!-- boots of haste -->
+		<item id="22397" countmax="3" chance="100000"/><!-- dream matter -->
+		<item id="22598" countmax="3" chance="100000"/><!-- unrealized dream -->
+		<item id="6500" countmax="2" chance="100000"/><!-- demonic essence -->
+		<item id="5954" chance="50000"/><!-- demon horn -->
+		<item id="2152" countmax="50" chance="100000"/><!-- platinum coin -->
+		<item id="8473" countmax="100" chance="100000"/><!-- ultimate health potion -->
+		<item id="8472" countmax="100" chance="100000"/><!-- great spirit potion -->
+		<item id="7590" countmax="100" chance="100000"/><!-- great mana potion -->
+		<item id="7591" countmax="100" chance="100000"/><!-- great health potion -->
+		<item id="2160" countmax="6" chance="100000"/><!-- crystal coin -->
+		<item id="7368" countmax="100" chance="50000"/><!-- assassin star -->
+		<item id="6529" countmax="100" chance="50000"/><!-- infernal bolt -->
+		<item id="2168" chance="25000"/><!-- life ring -->
+		<item id="22613" chance="25000"/><!-- eye pod -->
+		<item id="22614" chance="25000"/><!-- nightmare beacon -->
+		<item id="22608" chance="25000"/><!-- nightmare horn -->
+		<item id="22611" chance="25000"/><!-- psychodelic tapestry -->
+		<item id="22612" chance="25000"/><!-- demonic tapestry -->
+		<item id="5911" chance="25000"/><!-- red piece of cloth -->
+		<item id="5914" chance="25000"/><!-- yellow piece of cloth -->
+		<item id="5741" chance="25000"/><!-- skull helmet -->
+		<item id="2470" chance="25000"/><!-- golden legs -->
+		<item id="7899" chance="25000"/><!-- magma coat -->
+		<item id="22398" chance="5000"/><!-- crude umbral blade -->
+		<item id="22399" chance="5000"/><!-- umbral blade -->
+		<item id="22401" chance="5000"/><!-- crude umbral slayer -->
+		<item id="22402" chance="5000"/><!-- umbral slayer -->
+		<item id="22404" chance="5000"/><!-- crude umbral axe -->
+		<item id="22405" chance="5000"/><!-- umbral axe -->
+		<item id="22407" chance="5000"/><!-- crude umbral chopper -->
+		<item id="22408" chance="5000"/><!-- umbral chopper -->
+		<item id="22410" chance="5000"/><!-- crude umbral mace -->
+		<item id="22411" chance="5000"/><!-- umbral mace -->
+		<item id="22413" chance="5000"/><!-- crude umbral hammer -->
+		<item id="22414" chance="5000"/><!-- umbral hammer -->
+		<item id="22416" chance="5000"/><!-- crude umbral bow -->
+		<item id="22417" chance="5000"/><!-- umbral bow -->
+		<item id="22420" chance="5000"/><!-- umbral crossbow -->
+		<item id="22422" chance="5000"/><!-- crude umbral spellbook -->
+		<item id="22423" chance="5000"/><!-- umbral spellbook -->
+		<item id="22609" chance="5000"/><!-- dream warden claw -->
+		<item id="22610" chance="5000"/><!-- dream warden mask -->
+		<item id="18413" countmax="5" chance="100000"/><!-- blue crystal shard -->
+		<item id="18414" countmax="5" chance="100000"/><!-- violet crystal shard -->
+		<item id="18418" countmax="15" chance="100000"/><!-- blue crystal splinter -->
+		<item id="18417" countmax="15" chance="100000"/><!-- brown crystal splinter -->
+		<item id="18416" countmax="15" chance="100000"/><!-- green crystal splinter -->
+		<item id="7632" chance="50000"/><!-- giant shimmering pearl -->
+		<item id="7633" chance="50000"/><!-- giant shimmering pearl -->
+		<item id="2158" chance="50000"/><!-- blue gem -->
+		<item id="11262" chance="100000"/><!-- solitude charm -->
+		<item id="11261" chance="100000"/><!-- twin sun charm -->
+		<item id="11260" chance="100000"/><!-- spiritual charm -->
+		<item id="11259" chance="100000"/><!-- unity charm -->
+		<item id="11258" chance="100000"/><!-- phoenix charm -->
+	</loot>
+</monster>

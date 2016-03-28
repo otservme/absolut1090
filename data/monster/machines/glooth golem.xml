@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Glooth Golem" nameDescription="a glooth golem" race="blood" experience="1650" speed="200" manacost="490">
+	<health now="2700" max="2700"/>
+	<look type="600" corpse="23336"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+        <flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="110" attack="80"/>
+	</attacks>
+	<defenses armor="20" defense="20"/>
+	<elements>
+		<element energyPercent="25"/>
+		<element holyPercent="20"/>
+		<element earthPercent="-10"/>
+		<element deathPercent="-10"/>
+	</elements>
+	<loot>
+		<item id="2148" countmax="47" chance="82000"/><!-- gold coin -->
+		<item id="7618" chance="20100"/><!-- health potion -->
+		<item id="2666" chance="30070"/><!-- meat -->
+		<item id="23546" chance="2000"/><!-- gold coin -->
+		<item id="2152" chance="10010"/><!-- health potion -->
+		<item id="2666" countmax="3" chance="30070"/><!-- meat -->
+		<item id="23547" chance="2500"/><!-- gold coin -->
+		<item id="23467" chance="28000"/><!-- health potion -->
+		<item id="23522" chance="3000"/><!-- meat -->
+		<item id="23507" chance="200000"/><!-- gold coin -->
+		<item id="2149" countmax="3" chance="18000"/><!-- health potion -->
+		<item id="23544" chance="1800"/><!-- meat -->
+	</loot>
+</monster>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Ragiaz" nameDescription="Ragiaz" race="venom" experience="60000" speed="340" manacost="0">
+	<health now="400000" max="400000" />
+        <look type="862" head="76" body="57" legs="19" feet="0" addons="3" corpse="6068" />
+	<targetchange interval="5000" chance="8" />
+	<flags>
+                <flag rewardchest="1" />
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="2500" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-1000" max="-1600"/>
+		<attack name="ice" interval="2000" chance="20" radius="4" target="0" min="-500" max="-900">
+			<attribute key="areaEffect" value="icearea"/>
+		</attack>
+	</attacks>
+	<defenses armor="25" defense="25">
+		<defense name="healing" interval="2000" chance="10" min="2000" max="20000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element earthPercent="10"/>
+		<element holyPercent="10"/>
+		<element firePercent="10"/>
+		<element energyPercent="10"/>
+		<element icePercent="10"/>
+		<element physicalPercent="10"/>
+		<element deathPercent="10"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="30">
+		<voice sentence="Ragiaz power revives his minion!"/>
+	</voices>
+	<loot>
+		<item id="25655" chance="1000000"/>	<!-- silver token -->
+		<item id="2148" countmax="184" chance="98000"/>	<!-- gold coin -->
+		<item id="7896" chance="4000"/>				<!-- glacier kilt -->
+		<item id="7632" countmax="5" chance="14000"/>	<!-- giant shimmering pearl -->
+		<item id="7633" countmax="5" chance="14000"/>	<!-- giant shimmering pearl -->
+		<item id="2146" countmax="98" chance="12000"/>	<!-- small sapphire -->
+		<item id="2143" countmax="88" chance="12000"/>	<!-- white pearl -->
+		<item id="2150" countmax="54" chance="10000"/>	<!-- small amethyst -->
+		<item id="9970" countmax="87" chance="10000"/>	<!-- small topaz -->
+		<item id="2152" countmax="58" chance="8000"/>	<!-- platinum coin -->
+		<item id="6500" chance="11000"/>	<!-- demonic essence -->
+		<item id="2156" chance="15000"/>	<!-- red gem -->
+		<item id="2154" chance="14000"/>	<!-- yellow gem -->
+		<item id="7894" chance="7000"/>
+		<item id="2436" chance="4000"/>	
+		<item id="7426" chance="3000"/>	
+		<item id="7420" chance="360"/>				
+		<item id="25896" chance="170"/>	
+		<item id="26005" chance="570"/>					<!-- rift crossbow -->
+		<item id="26004" chance="610"/>					<!-- ritt bow -->
+	</loot>
+</monster>

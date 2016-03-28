@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="The Pale Count" nameDescription="The Pale Count" race="undead" experience="28000" speed="200" manacost="0">
+	<health now="25000" max="25000"/>
+	<look type="557" corpse="21270"/>
+	<targetchange interval="2000" chance="4"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+                <flag rewardchest="1" />
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="90" attack="50"/>
+		<attack name="physical" interval="2000" chance="30" range="7" min="-0" max="-300">
+			<attribute key="shootEffect" value="sniperarrow"/>
+		</attack>
+		<attack name="the pale count manadrain" interval="2000" chance="13" min="-400" max="-550"/>
+		<attack name="lifedrain" interval="2000" chance="10" length="8" spread="3" min="-400" max="-600">
+			<attribute key="areaEffect" value="bats"/>
+		</attack>
+		<attack name="bleedcondition" interval="2000" chance="18" range="7" radius="4" target="1" min="-400" max="-500">
+			<attribute key="shootEffect" value="throwingknife"/>
+			<attribute key="areaEffect" value="redspark"/>
+		</attack>
+		<attack name="lifedrain" interval="2000" chance="18" range="1" min="-150" max="-300"/>
+	</attacks>
+	<defenses armor="17" defense="23">
+		<defense name="healing" interval="2000" chance="17" min="185" max="300">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="outfit" interval="2000" chance="12" monster="nightfiend" duration="15000">
+			<attribute key="areaEffect" value="energy"/>
+		</defense>
+		<defense name="the pale count summon" interval="2000" chance="5"/>
+	</defenses>
+	<elements>
+		<element energyPercent="30"/>
+		<element physicalPercent="30"/>
+		<element earthPercent="30"/>
+		<element icePercent="30"/>
+		<element firePercent="15"/>
+		<element holyPercent="30"/>
+	</elements>
+	<immunities>
+		<immunity death="1"/>
+		<immunity lifedrain="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="2000" chance="5">
+		<voice sentence="Ah, the smell of warm blood and beating heart!"/>
+		<voice sentence="I will squish you like a maggot and suck you dry!"/>
+		<voice sentence="The monsters in the mirror will come eat your dreams."/>
+		<voice sentence="Your pitiful life has come to an end!"/>
+		<voice sentence="Yield to the inevitable!"/>
+		<voice sentence="Some day I shall see my beautiful face in a mirror again."/>
+	</voices>
+	<loot>
+		<item id="9020" chance="100000"/><!-- vampire lord token -->
+		<item id="21244" chance="100000"/><!-- vampire's cape chain -->
+		<item id="21253" chance="5000"/><!-- the vampire count's medal -->
+		<item id="21252" chance="5000"/><!-- vampire's signet ring -->
+		<item id="12405" chance="50000"/><!-- blood preservation -->
+		<item id="10602" chance="50000"/><!-- vampire teeth -->
+		<item id="21400" chance="5000"/><!-- silver raid token -->
+		<item id="2148" countmax="100" chance="1000000"/><!-- gold coin -->
+		<item id="2152" countmax="5" chance="100000"/><!-- platinum coin -->
+		<item id="7589" countmax="3" chance="50000"/><!-- strong mana potion -->
+		<item id="7588" countmax="3" chance="50000"/><!-- strong health potion -->
+		<item id="2165" chance="10000"/><!-- stealth ring -->
+		<item id="2214" chance="10000"/><!-- ring of healing -->
+		<item id="5909" chance="10000"/><!-- white piece of cloth -->
+		<item id="5911" chance="10000"/><!-- red piece of cloth -->
+		<item id="5912" chance="10000"/><!-- blue piece of cloth -->
+		<item id="7427" chance="5000"/><!-- chaos mace -->
+		<item id="2438" chance="10000"/><!-- epee -->
+		<item id="7419" chance="5000"/><!-- dreaded cleaver -->
+		<item id="8903" chance="5000"/><!-- spellbook of lost souls -->
+		<item id="21707" chance="5000"/><!-- haunted mirror piece -->
+		<item id="2534" chance="5000"/><!-- vampire shield -->
+		<item id="21708" chance="5000"/><!-- vampire silk slippers -->
+		<item id="2145" countmax="5" chance="50000"/><!-- small diamond -->
+		<item id="2144" countmax="5" chance="50000"/><!-- black pearl -->
+		<item id="2146" countmax="5" chance="50000"/><!-- small sapphire -->
+		<item id="2149" countmax="5" chance="50000"/><!-- small emerald -->
+		<item id="9970" countmax="5" chance="50000"/><!-- small topaz -->
+		<item id="2153" chance="10000"/><!-- violet gem -->
+	</loot>
+</monster>

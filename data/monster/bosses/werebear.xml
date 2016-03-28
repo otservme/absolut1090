@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Werebear" nameDescription="a werebear" race="blood" experience="2100" speed="260" manacost="465">
+	<health now="2400" max="2400"/>
+	<look type="720" corpse="13308"/>
+	<targetchange interval="4000" chance="0"/>
+	<flags>
+        <flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="30"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="150" max="-450"/>
+	</attacks>
+	<defenses armor="35" defense="35"/>
+	<voices interval="5000" chance="10">
+		<voice sentence="GROOOWL"/>
+		<voice sentence="GRRR"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="100" chance="25000"/>	<!-- gold -->
+		<item id="8473" countmax="2" chance="15000"/>	<!-- ultimate health potion -->
+		<item id="7588" countmax="2" chance="15000"/>	<!-- strong health potion -->
+		<item id="24885" chance="9000"/>	<!-- werebear fur -->
+		<item id="24884" chance="8000"/>	<!-- Werebear Skull -->
+		<item id="5902" chance="10000"/>	<!-- honeycomb -->
+		<item id="2197" chance="5000"/>	<!-- stone skin amulet -->
+		<item id="7439" chance="3000"/>	<!-- berserket potion -->
+		<item id="7432" chance="4000"/>	<!-- furry club -->
+		<item id="7419" chance="500"/>	<!-- Dreaded Cleaver -->
+		<item id="24913" chance="1000"/>	<!-- fur armor -->
+		<item id="24931" chance="500"/>	<!-- Werebear trophy -->
+		<item id="24888" chance="1000"/>	<!-- Werewolf amulet -->
+		<item id="7383" chance="1000"/>	<!-- relic sword -->
+		<item id="5896" chance="8000"/>	<!-- bear paw -->
+		<item id="2152" countmax="3" chance="20000"/>	<!-- platinum coin -->
+	</loot>
+</monster>
